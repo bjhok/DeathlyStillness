@@ -54,7 +54,7 @@ public:
 	//给动画蓝图蹲伏bool赋值
 	UFUNCTION(BlueprintImplementableEvent, Category = "SetCrouchVal")
 	void SetCrouchVal(bool CanCrouch);
-	// // 时间轴更新时调用
+	// 时间轴更新时调用
 	UFUNCTION()
 	void HandleTimelineUpdate(float OutputValue); 
 public:	

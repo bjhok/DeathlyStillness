@@ -18,9 +18,23 @@ public:
 	UDSPlayerAnim();
 	virtual void NativeInitializeAnimation() override;
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
-
-protected:
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Speed;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsInTheAir;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsJump;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsCrouch;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Yaw;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Pitch;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsHoldGun;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsEquipWeapon;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float EquipWeaponDir;
 };
